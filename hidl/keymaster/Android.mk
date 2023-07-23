@@ -34,6 +34,9 @@ LOCAL_SHARED_LIBRARIES := \
     libskeymaster4device \
     libutils
 
+LOCAL_SHARED_LIBRARIES += \
+    $(TARGET_KEYMASTER_ADDITIONAL_SHARED_LIBS)
+
 LOCAL_MODULE := android.hardware.keymaster@4.0-service.samsung
 LOCAL_INIT_RC := android.hardware.keymaster@4.0-service.samsung.rc
 LOCAL_MODULE_RELATIVE_PATH := hw
